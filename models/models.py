@@ -20,3 +20,21 @@ class Log(models.Model):
     description = fields.Text(string='Description')
     change = fields.Integer(string='Change')
     stock_id = fields.Many2one('rpk.stock', string='Stock')
+
+class Catalog(models.Model):
+    _name = 'rpk.catalog'
+
+    name = fields.Char(string='Room Name')
+    price = fields.Float(string='Price')
+    description = fields.Text(string='Description')
+    image = fields.Binary(string='Image')
+    booking_ids = fields.One2many('rpk.booking', 'catalog_id', string='Bookings')
+
+
+class Reservation(models.Model):
+    _name = 'rpk.reservation'
+
+    date_start = fields.Date(string='Date Start')
+    date_end = fields.Date(string='Date End')
+    catalog_id = fields.Many2one('rpk.catalog', string='Room')
+
