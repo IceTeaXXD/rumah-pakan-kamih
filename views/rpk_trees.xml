@@ -18,6 +18,7 @@
     <field name="model">rpk.log</field>
     <field name="arch" type="xml">
       <tree string="Log">
+        <field name="stock_id"/>
         <field name="date"/>
         <field name="description"/>
         <field name="change"/>
