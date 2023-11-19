@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="rpk_stock_action" model="ir.actions.act_window">
+        <field name="name">Stock</field>
+        <field name="res_model">rpk.stock</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="rpk_log_action" model="ir.actions.act_window">
+        <field name="name">Log</field>
+        <field name="res_model">rpk.log</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="rpk_main_menu" 
+        name="RPK" 
+        sequence="1" />
+
+    <menuitem id="rpk_stock_menu" 
+        name="Stock" 
+        parent="rpk_main_menu" 
+        sequence="1" 
+        action="rpk_stock_action" />
+
+    <menuitem id="rpk_log_menu" 
+        name="Log" 
+        parent="rpk_main_menu" 
+        sequence="2" 
+        action="rpk_log_action" />
+        
+</odoo>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <!-- Stock Form View -->
+  <record id="view_stock_form" model="ir.ui.view">
+    <field name="name">rpk.stock.form</field>
+    <field name="model">rpk.stock</field>
+    <field name="arch" type="xml">
+      <form string="Stock">
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="quantity"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+    <!-- Log Form View -->
+  <record id="view_log_form" model="ir.ui.view">
+    <field name="name">rpk.log.form</field>
+    <field name="model">rpk.log</field>
+    <field name="arch" type="xml">
+      <form string="Log">
+        <sheet>
+          <group>
+            <field name="date"/>
+            <field name="description"/>
+            <field name="change"/>
+            <field name="stock_id"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+</odoo>

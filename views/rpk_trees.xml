@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<!-- Stock Tree View -->
+  <record id="view_stock_tree" model="ir.ui.view">
+    <field name="name">rpk.stock.tree</field>
+    <field name="model">rpk.stock</field>
+    <field name="arch" type="xml">
+      <tree string="Stock">
+        <field name="name"/>
+        <field name="quantity"/>
+      </tree>
+    </field>
+  </record>
+
+  <!-- Log Tree View -->
+  <record id="view_log_tree" model="ir.ui.view">
+    <field name="name">rpk.log.tree</field>
+    <field name="model">rpk.log</field>
+    <field name="arch" type="xml">
+      <tree string="Log">
+        <field name="date"/>
+        <field name="description"/>
+        <field name="change"/>
+      </tree>
+    </field>
+  </record>
+</odoo>
