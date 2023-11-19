@@ -34,4 +34,39 @@
     </field>
   </record>
 
+  <!-- Catalog Form View -->
+  <record id="view_catalog_form" model="ir.ui.view">
+    <field name="name">rpk.catalog.form</field>
+    <field name="model">rpk.catalog</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="price"/>
+            <field name="description"/>
+            <field name="image" widget="image"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- Reservation Form View -->
+  <record id="view_reservation_form" model="ir.ui.view">
+    <field name="name">rpk.reservation.form</field>
+    <field name="model">rpk.reservation</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="date_start"/>
+            <field name="date_end"/>
+            <field name="catalog_id"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
 </odoo>

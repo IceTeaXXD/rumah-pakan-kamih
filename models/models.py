@@ -28,7 +28,7 @@ class Catalog(models.Model):
     price = fields.Float(string='Price')
     description = fields.Text(string='Description')
     image = fields.Binary(string='Image')
-    booking_ids = fields.One2many('rpk.booking', 'catalog_id', string='Bookings')
+    reservation_ids = fields.One2many('rpk.reservation', 'catalog_id', string='Bookings')
 
 
 class Reservation(models.Model):

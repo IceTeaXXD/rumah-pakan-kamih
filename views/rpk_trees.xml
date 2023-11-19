@@ -25,4 +25,30 @@
       </tree>
     </field>
   </record>
+
+  <!-- Catalog Tree View -->
+    <record id="view_catalog_tree" model="ir.ui.view">
+      <field name="name">rpk.catalog.tree</field>
+      <field name="model">rpk.catalog</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="price"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+  <!-- Reservation Tree View -->
+  <record id="view_reservation_tree" model="ir.ui.view">
+    <field name="name">rpk.reservation.tree</field>
+    <field name="model">rpk.reservation</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="date_start"/>
+        <field name="date_end"/>
+        <field name="catalog_id"/>
+      </tree>
+    </field>
+  </record>
 </odoo>

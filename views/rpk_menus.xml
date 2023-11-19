@@ -12,27 +12,59 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="rpk_catalog_action" model="ir.actions.act_window">
+        <field name="name">Room Catalog</field>
+        <field name="res_model">rpk.catalog</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="rpk_reservation_action" model="ir.actions.act_window">
+        <field name="name">Reservation</field>
+        <field name="res_model">rpk.reservation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <menuitem id="rpk_main_menu" 
         name="Rumah Pakan Kamih" 
         sequence="1"
         web_icon="static/description/icon.png"
         />
 
-    <menuitem id="rpk_submenu" 
+    <menuitem id="rpk_stock_management" 
         name="Stock Management" 
         parent="rpk_main_menu" 
         sequence="1" />
 
+    <menuitem id="rpk_reservation_menu"
+        name="Rooms"
+        parent="rpk_main_menu"
+        sequence="2" />
+
     <menuitem id="rpk_stock_menu" 
         name="Stock Overview" 
-        parent="rpk_submenu" 
-        sequence="1" 
+        parent="rpk_stock_management" 
+        sequence="10" 
         action="rpk_stock_action" />
 
     <menuitem id="rpk_log_menu" 
         name="Stock Log" 
-        parent="rpk_submenu" 
-        sequence="2" 
+        parent="rpk_stock_management" 
+        sequence="20" 
         action="rpk_log_action" />
+
+    
+    <menuitem id="rpk_catalog"
+        name="Room Catalog"
+        parent="rpk_reservation_menu"
+        sequence="3" 
+        action="rpk_catalog_action"
+        />
+
+    <menuitem id="rpk_reservation"
+        name="Reservation"
+        parent="rpk_reservation_menu"
+        sequence="4" 
+        action="rpk_reservation_action"
+        />
         
 </odoo>
