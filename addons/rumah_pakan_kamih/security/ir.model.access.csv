@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+rpk_stock_manager,RPK Stock Manager,model_rpk_stock,,1,1,1,1
+rpk_log_manager,RPK Log Manager,model_rpk_log,,1,1,1,1

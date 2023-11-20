@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-stock_model_manager,Stock Manager,model_rpk_stock,,1,1,1,1
-log_model_manager,Log Manager,model_rpk_log,,1,1,1,1
-catalog_model_manager,Catalog Manager,model_rpk_catalog,,1,1,1,1
-reservation_model_manager,Reservation Manager,model_rpk_reservation,,1,1,1,1

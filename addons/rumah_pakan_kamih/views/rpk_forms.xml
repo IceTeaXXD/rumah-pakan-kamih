@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <record model="ir.ui.view" id="rpk_stock_form">
+    <field name="name">rpk.stock.form</field>
+    <field name="model">rpk.stock</field>
+    <field name="arch" type="xml">
+      <form string="Stock">
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="quantity"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="rpk_log_form">
+    <field name="name">rpk.log.form</field>
+    <field name="model">rpk.log</field>
+    <field name="arch" type="xml">
+      <form string="Log">
+        <sheet>
+          <group>
+            <field name="date"/>
+            <field name="description"/>
+            <field name="change"/>
+            <field name="stock_id"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- <record model="ir.ui.view" id="cats_cat_form">
+    <field name="name">cats.cat.form</field>
+    <field name="model">cats.cat</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="color"/>
+            <field name="type"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record> -->
+
+  <!-- <record model="ir.ui.view" id="cats_cat_type_form">
+    <field name="name">cats.cat.type.form</field>
+    <field name="model">cats.cat.type</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="name"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record> -->
+  
+</odoo>
